@@ -6,6 +6,9 @@
     "packages/*",
     "apps/*"
   ],
+  "scripts": {
+    "g:typecheck": "yarn workspaces foreach -pv run typecheck"
+  },
   "devDependencies": {
     "@types/eslint": "^8",
     "@types/prettier": "^2",
