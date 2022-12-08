@@ -343,7 +343,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/ui", {\
           "packageLocation": "./packages/ui/",\
           "packageDependencies": [\
-            ["@taeyoung/ui", "workspace:packages/ui"]\
+            ["@taeyoung/ui", "workspace:packages/ui"],\
+            ["@types/node", "npm:18.11.11"],\
+            ["@types/react", "npm:18.0.26"],\
+            ["@types/react-dom", "npm:18.0.9"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fe2cd7152cd38348d8d20861007f695cd07c52aec45a6047d599f2c3e500d9ee93db3f15a46a09bbb622ea0b4e1c7970c46ea7edc5ff7a76f22ef58238e774b4#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3503,6 +3509,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-b9b216bc0d-67ca21a387.zip/node_modules/typescript/",\
           "packageDependencies": [\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-b74a6ef84c-37f6e2c3c5.zip/node_modules/typescript/",\
+          "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=d73830"]\
           ],\
           "linkType": "HARD"\
         }]\
