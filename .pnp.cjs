@@ -22,12 +22,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@taeyoung/lib",\
         "reference": "workspace:packages/lib"\
+      },\
+      {\
+        "name": "@taeyoung/ui",\
+        "reference": "workspace:packages/ui"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@taeyoung/lib", ["workspace:packages/lib"]],\
+      ["@taeyoung/ui", ["workspace:packages/ui"]],\
       ["@taeyoung/web", ["workspace:apps/web"]],\
       ["yarn-berry-workspace", ["workspace:."]]\
     ],\
@@ -330,6 +335,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@taeyoung/lib", "workspace:packages/lib"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@taeyoung/ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["@taeyoung/ui", "workspace:packages/ui"]\
           ],\
           "linkType": "SOFT"\
         }]\

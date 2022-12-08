@@ -238,6 +238,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@taeyoung/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@taeyoung/ui@workspace:packages/ui"
+  languageName: unknown
+  linkType: soft
+
 "@taeyoung/web@workspace:apps/web":
   version: 0.0.0-use.local
   resolution: "@taeyoung/web@workspace:apps/web"
